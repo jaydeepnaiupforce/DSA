@@ -1,13 +1,11 @@
-const stringReverseWithoutReverseFinction = (str : string)=>{
+const stringReverseWithoutReverseFinction = (str: string) => {
+  var revseredStr = "";
 
-    var revseredStr = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    revseredStr += str[i];
+  }
 
-    for(let i = str.length - 1; i >= 0; i--){
-        revseredStr += str[i];
-    }
+  return revseredStr;
+};
 
-    return revseredStr
-
-}
-
-console.log(stringReverseWithoutReverseFinction("JAYDEEPN"))
+console.log(stringReverseWithoutReverseFinction("JAYDEEPN"));
